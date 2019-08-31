@@ -30,6 +30,7 @@ public class SpringTest {
 
 }
 
+/*
 @SpringBootApplication
 @Configuration
 @ComponentScan("com.anup.SpringTest")
@@ -41,11 +42,14 @@ class SpringTestApplicationForComponent {
         SpringTest test = (SpringTest) applicationContext.getBean(SpringTest.class);
         test.testDependency();
     }
+*/
 /*
     Output -
     In child 2
     In child 1
     In child 1
-*/
+*//*
+
 }
+*/
 
