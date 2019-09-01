@@ -37,8 +37,8 @@ public class BeanConfiguration {
     }
 */
     @Bean
-    public Zoo getBeanDogZooWithQualifier(@Autowired AnimalType getDogUsingQualifier){
-        return new Zoo(getDogUsingQualifier);
+    public Zoo getBeanDogZooWithQualifier(@Autowired @Qualifier("BeanDog") AnimalType xyz){
+        return new Zoo(xyz);
     }
 
     /*@Bean

@@ -16,7 +16,9 @@ public class SpringTest {
     public Parent child1;
 
     @Autowired
-    public SpringTest(@Qualifier("Child2") Parent child2, Parent child, @Qualifier("Child1") Parent child1) {
+    public SpringTest(@Qualifier("Child2") Parent child2,
+                      Parent child,
+                      @Qualifier("Child1") Parent child1) {
         this.child2 = child2;//assigning using qualifier
         this.child = child; // assigned due to primary
         this.child1 = child1; //assigned using qualifier
